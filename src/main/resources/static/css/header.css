@@ -1,0 +1,64 @@
+/* Định dạng chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+/* Thanh tìm kiếm (80%) */
+.search-bar {
+    flex: 4; /* 80% */
+    display: flex;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #4b4b4b;
+}
+
+.login a:hover {
+    color: red;
+    transition: background-color 0.3s ease;
+}
+
+.login {
+    flex: 1; /* 20% */
+    text-align: right;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar, .login {
+        width: 100%;
+    }
+
+    .login {
+        text-align: center;
+    }
+}
