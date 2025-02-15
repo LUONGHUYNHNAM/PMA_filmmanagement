@@ -1,0 +1,43 @@
+.menu_bar {
+    margin-top: 70px;
+}
+
+.menu_bar ul li {
+    margin-bottom:30px;
+
+}
+.menu_bar ul {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.menu_bar ul li i {
+    font-size: 18px;
+    color: #919191;
+}
+
+.menu_bar ul li a {
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #919191;
+
+}
+
+.brand h1{
+    margin-top: 18px;
+    color: red;
+}
+
+.menu_bar_2{
+    margin-left: 50px;
+}
+
+.menu_bar_2 ul {
+    list-style: none;
+}
+
+.menu_bar_2 ul li {
+    margin-bottom: 30px;
+    color: #919191;
+}

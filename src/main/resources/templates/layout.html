@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <div class="container">
-    <div class="menu">
+    <div th:replace="/components/menu :: menu" >
 
     </div>
     <div class="content">
-        <header>
-            Header
+        <header th:replace="/components/header :: header">
+
         </header>
 
             <article>
@@ -20,8 +25,8 @@
             </article>
 
     </div>
-    <footer>
-        Footer
+    <footer th:replace="/components/footer :: footer">
+
     </footer>
 </div>
 
