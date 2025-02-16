@@ -16,4 +16,8 @@ public class testKhang {
 	public String quenmatkhau() {
 		return "/user/forgetPassword";
 	}
+	@RequestMapping("/home/chitiet")
+	public String chitiet() {
+		return "/user/chitiet";
+	}
 }
