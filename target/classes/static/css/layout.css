@@ -1,0 +1,39 @@
+
+body {
+    margin : 0 auto;
+    background: linear-gradient(to bottom, #383838, #121212);
+    height: 100vh; /* Chiều cao toàn màn hình */
+}
+header {
+    width: 100%;
+    height: 70px;
+
+}
+article {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.menu {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+
+}
+
+.content {
+    position: relative;
+    left: 20%;
+
+    width: 80%;
+    height: 100%;
+
+}
+
+.container {
+
+    display: inline;
+
+}
+
