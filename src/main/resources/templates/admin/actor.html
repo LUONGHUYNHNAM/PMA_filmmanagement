@@ -2,14 +2,46 @@
 <html lang="en" th:replace="~{/admin/layout::shared(~{::.content})}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>actior</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Actor List</title>
 </head>
 
 <body>
-    <div class="content">
-		<h1>actior</h1>
+	<div class="content">
+		<h1>Danh sách Cast Members</h1>
+		<a th:href="@{/admin/actor/add}">Thêm diễn viên</a>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Tên</th>
+					<th>tham gia phim</th>
+					<th>action</th>
+					<!-- Thêm các cột khác nếu cần -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="castMember : ${castMembers}">
+					<td th:text="${castMember.castId}"></td>
+					<td th:text="${castMember.castName}"></td>
+					<td>
+					    <ul>
+					        <li th:each="movie : ${castMember.movieCasts}" th:text="${movie.movie.title}"></li>
+					    </ul>
+					</td>
+
+					<td>
+						<a th:href="@{/admin/actor/edit/{id}(id=${castMember.castId})}">Sửa</a> |
+						<a th:href="@{/admin/actor/delete/{id}(id=${castMember.castId})}">Xóa</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		
 	</div>
 </body>
 

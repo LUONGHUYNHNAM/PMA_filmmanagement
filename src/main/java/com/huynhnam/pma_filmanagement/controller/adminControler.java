@@ -13,16 +13,16 @@ public class adminControler {
         
         return "/admin/index";
     }
-	@RequestMapping("/admin/actor")
-    public String customer(Model model, HttpServletRequest request) {
-        
-        return "/admin/actor";
-    }
-	@RequestMapping("/admin/movie")
-    public String product(Model model, HttpServletRequest request) {
-        
-        return "/admin/movie";
-    }
+//	@RequestMapping("/admin/actor")
+//    public String customer(Model model, HttpServletRequest request) {
+//        
+//        return "/admin/actor";
+//    }
+//	@RequestMapping("/admin/movie")
+//    public String product(Model model, HttpServletRequest request) {
+//        
+//        return "/admin/movie";
+//    }
 	@RequestMapping("/admin/director")
     public String category(Model model, HttpServletRequest request) {
         
