@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(/auth/imgs/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-signin {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+.btn-signin:hover {
+    opacity: 0.9;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 4rem;
+    min-width: 30%;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px #fff;
+    color: white;
+}
+
+.form-control {
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    border: 0.5px solid #777676;
+}
+
+.floatingLabel {
+    color: rgb(160, 162, 162) !important;
+}
+
+.forgot-password {
+    transition: all 300ms ease;
+}
+
+.forgot-password:hover {
+    color: #777676 !important;
+}
