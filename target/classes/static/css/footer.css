@@ -1,0 +1,39 @@
+/* Định dạng Footer */
+footer { /* Hiệu ứng chuyển màu */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    background-color: black;
+}
+
+/* Căn giữa nội dung */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Định dạng các icon */
+.social-icons {
+    display: flex;
+    gap: 15px;
+
+}
+.social-icons a { color: white}
+
+.icon {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #1DA1F2; /* Màu xanh khi hover */
+}

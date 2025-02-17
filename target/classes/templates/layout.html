@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" th:fragment="frag(title,noidung)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div th:replace="/components/menu :: menu" >
+
+    </div>
+    <div class="content">
+        <header th:replace="/components/header :: header">
+        </header>
+
+            <article>
+                <th:block th:replace="${noidung}">
+                </th:block>
+            </article>
+
+    </div>
+    <footer th:replace="/components/footer :: footer">
+
+    </footer>
+</div>
+
+</body>
+</html>
