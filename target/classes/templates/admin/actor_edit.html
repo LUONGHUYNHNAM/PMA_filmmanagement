@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{/admin/layout::shared(~{::.content})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa diễn viên</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Chỉnh sửa diễn viên</h1>
+
+		<form action="/admin/actor/save" th:method="POST" th:object="${castMember}">
+            <div>
+                <label for="castId">Id:</label>
+                <input type="text" id="castId" th:value="${castMember.castId}" disabled />
+            </div>
+            <div>
+                <label for="castName">Tên:</label>
+                <input type="text" id="castName" name="castName" th:value="${castMember.castName}" required />
+            </div>
+            <div>
+				<label for="movies">Chọn phim:</label>
+				    <select name="movies" multiple>
+				        <option th:each="movie : ${movies}" th:value="${movie.movieId}"
+				                th:text="${movie.title}" 
+				                th:selected="${castMember.movieCasts != null and castMember.movieCasts.contains(movie)}">
+				        </option>
+				    </select>
+            </div>
+            <div>
+                <button type="submit">Cập nhật</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
